@@ -98,4 +98,32 @@
     "category": "Sports",
     "seller": "Ebay",
     "stock": 6
+  },
+  {
+    "name": "Apple Watch Series 9 [GPS 45mm]",
+    "price": 399.00,
+    "description": "Smartwatch with Midnight Aluminum Case with Midnight Sport Band. Fitness Tracker, Blood Oxygen & ECG Apps, Always-On Retina Display, Water Resistant",
+    "ratings": 4.8,
+    "images": [
+      {
+        "image": "/images/products/2.jpg"
+      }
+    ],
+    "category": "Accessories",
+    "seller": "Apple",
+    "stock": 15
+  },
+  {
+    "name": "LG 27UN850-W 27 Inch Ultrafine UHD (3840 x 2160) IPS Display",
+    "price": 379.99,
+    "description": "VESA DisplayHDR 400 and USB Type-C with 60W Power Delivery, 3-Side Virtually Borderless Design with Height/Swivel/Pivot/Tilt Adjustable Stand, Silver",
+    "ratings": 4.6,
+    "images": [
+      {
+        "image": "/images/products/6.jpg"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "Amazon",
+    "stock": 8
   }]
