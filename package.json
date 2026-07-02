@@ -1,12 +1,17 @@
 {
   "name": "mini-ecommerce",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "prod" : "node backend/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
+    "prod": "node backend/app.js",
+    "start": "node backend/app.js",
+    "heroku-postbuild": "npm run build"
   },
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
 }
