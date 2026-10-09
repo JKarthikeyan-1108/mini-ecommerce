@@ -24,7 +24,7 @@ if (process.env.NODE_ENV == 'production') {
     });
 }
 
-if (process.env.NODE_ENV !== 'production') {
+if (!process.env.NETLIFY && !process.env.AWS_LAMBDA_FUNCTION_NAME) {
     app.listen(process.env.PORT || 8000, () => {
         console.log(`Server listening to Port ${process.env.PORT || 8000} in ${process.env.NODE_ENV}`);
     });
