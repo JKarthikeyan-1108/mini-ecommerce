@@ -32,10 +32,10 @@ function App() {
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/contact" element={<ContactUs />} />
             </Routes>
+            <Footer/>
           </div>
         </Router>
       </AuthProvider>
-      <Footer/>
     </div>
   );
 }
