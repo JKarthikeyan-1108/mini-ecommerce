@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: mini-ecommerce
+    env: node
+    buildCommand: CI=false npm run build
+    startCommand: npm run prod
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_URL
+        sync: false # Set this in Render dashboard (e.g. MongoDB Atlas URL)
+      - key: PORT
+        value: 8000
