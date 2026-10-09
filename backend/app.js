@@ -10,6 +10,7 @@ const products = require('./routes/product');
 const orders = require('./routes/order');
 
 connectDatabase();
+require('./config/firebaseAdmin');
 
 app.use(express.json());
 app.use(cors());
